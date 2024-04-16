@@ -1,0 +1,65 @@
+.evidences {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.evidencesText {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.evidencesCard {
+  max-width: 1200px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.181);
+}
+
+.evidencesCardImgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Imgs {
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.evidencesCard img {
+  width: calc(25% - 20px);
+  /* Calcular el ancho para 4 imágenes por fila */
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.evidencesCard img:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 992px) {
+  .evidencesCard img {
+    width: calc(33.33% - 20px);
+    /* Calcular el ancho para 3 imágenes por fila en dispositivos medianos */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .evidencesCard img {
+    width: calc(50% - 20px);
+    /* Calcular el ancho para 2 imágenes por fila en dispositivos pequeños */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .evidencesCard img {
+    width: calc(100% - 20px);
+    /* Calcular el ancho para 1 imagen por fila en dispositivos extra pequeños */
+  }
+}

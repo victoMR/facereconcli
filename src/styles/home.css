@@ -1,0 +1,33 @@
+.backgraund {
+    background-image: url(../images/fondo.png);
+    /* add blur to bg img  */
+    filter: opacity(0.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 100%;
+}
+
+.backgraundText h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.backgraundText p {
+    /* Hacer mas peqeuño y poner al centro  */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    /* Bordees a los lados  */
+    margin: 0 20% 0 20%;
+}

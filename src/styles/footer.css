@@ -1,0 +1,86 @@
+.footer {
+    background-color: #008afc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footerText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    /* Agregar margen inferior para separar del siguiente contenido */
+}
+
+.fHeader {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.fHeader1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10%;
+
+}
+
+.fBody {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+.redesSociales {
+    background-color: #008afc;
+    /* Para que el color de fondo sea visible si no hay iconos */
+    color: white;
+    text-align: center;
+
+    padding: 1px;
+    position: absolute;
+    bottom: 15%;
+    /* Situarlo a 20px de la parte inferior del contenedor padre */
+    right: 58%;
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Espacio entre los iconos */
+}
+
+.redesSociales a {
+    color: white;
+}
+
+.legal {
+    margin-bottom: 20px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Media queries para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+    .footerText {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redesSociales {
+        position: relative;
+        bottom: auto;
+        left: 1%;
+        padding: 15px;
+        transform: none;
+    }
+}

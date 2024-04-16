@@ -1,0 +1,112 @@
+/* Estilos base */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbarContent {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+.navbarBrand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #343a40;
+    cursor: pointer;
+    /* Cambiar el cursor a un puntero cuando se hace clic */
+    transition: color 0.3s ease;
+    /* Transición suave para el color */
+    margin-left: 10%;
+}
+
+img.navbarBrand {
+    width: 5rem;
+    height: 5rem;
+}
+
+.navbarItem {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    /* Eliminar viñetas de la lista */
+}
+
+.navbarItem a {
+    color: #343a40;
+    text-decoration: none;
+    margin-left: 4rem;
+    transition: color 0.3s ease;
+    /* Transición suave para el color */
+}
+
+.navbarItem a:hover {
+    color: #007bff;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+/* Media Queries para hacerlo responsive */
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 900px) {
+    .navbarContent {
+        display: flex;
+        padding-left: 75%;
+    }
+
+    .navbarBrand {
+        margin: 10px;
+    }
+
+    .navbarItem {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        cursor: pointer;
+        margin-right: 10%;
+    }
+
+    .hamburgerMenu i {
+        font-size: 1.5rem;
+        color: #343a40;
+    }
+
+    .hamburgerMenu i:hover {
+        color: #007bff;
+    }
+
+    .navbarItem.active {
+        display: block;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        padding: 1rem 0;
+        z-index: 99;
+    }
+
+    .navbarItem.active a {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+}
